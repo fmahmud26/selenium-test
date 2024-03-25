@@ -23,6 +23,8 @@ public class Main {
       boolean keywordCount = searchKeywords(driver, name);
       driver.quit();
       System.out.println("Keyword found: " + keywordCount);
+    } catch (Exception exception) {
+      System.out.println(exception.getMessage());
     } finally {
       driver.quit();
     }
